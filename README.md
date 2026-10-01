@@ -54,7 +54,7 @@ g++ -Wall -Wextra -std=c++17 main.cpp -o calculadora
 ```
 
 ## 7. Ejemplo de ejecución (Fase 3)
-<!-- Pega aquí lo que muestra tu programa en pantalla con una división donde primero escribes 0 como segundo número. -->
+error, no se puede dividir entre 0
 
 ```
 _____
@@ -73,28 +73,27 @@ _____
 | 8. Mostrar el resultado | _____ |
 
 **¿Hubo algún paso de la receta que te costó traducir a C++? ¿Cuál y por qué?**
-_____
+no , ninguno 
 
 ## 9. Experimentos (Fase 3)
 
 **Experimento A: sin el `break` del `case 1`, ¿qué mostró el programa con 8 + 5? ¿Qué te dijo el compilador? ¿Por qué pasó?**
-_____
-
+13, por que el case 1 es sobre sumas
 **Experimento B: sin la validación del Paso 6, ¿qué mostró el programa con 5 / 0? ¿Tiene sentido?**
-_____
+mando que no se puede dividir entre 0
 
 **Experimento C (opcional): con `a` y `b` de tipo `int`, ¿qué resultado dio 7 / 2? ¿Te avisó el compilador?**
-_____
+no te lo acepta por que int es para solamente numeros enteros
 
 ## 10. Tabla de pruebas (Fase 4)
 
 | Caso | Entradas (opción, a, b) | Esperado | Obtenido | ¿Pasó? |
 |---|---|---|---|---|
-| Suma | 1, 8, 5 | 8 + 5 = 13 | _____ | _____ |
-| Resta negativa | 2, 3, 5 | 3 - 5 = -2 | _____ | _____ |
-| Multiplicación con decimales | 3, 2.5, 4 | 2.5 * 4 = 10 | _____ | _____ |
-| Multiplicación con negativo | 3, -3, 4 | -3 * 4 = -12 | _____ | _____ |
-| División | 4, 7, 2 | 7 / 2 = 3.5 | _____ | _____ |
+| Suma | 1, 8, 5 | 8 + 5 = 13 | _si____ | si_____ |
+| Resta negativa | 2, 3, 5 | 3 - 5 = -2 | __si___ | ___si__ |
+| Multiplicación con decimales | 3, 2.5, 4 | 2.5 * 4 = 10 | _____ si| ____si_ |
+| Multiplicación con negativo | 3, -3, 4 | -3 * 4 = -12 | __si___ | __si___ |
+| División | 4, 7, 2 | 7 / 2 = 3.5 | __si___ | _si____ |
 | Dividendo cero | 4, 0, 5 | 0 / 5 = 0 | _____ | _____ |
 | Divisor cero | 4, 5, 0 (luego 2) | vuelve a pedir `b`; 5 / 2 = 2.5 | _____ | _____ |
 | Suma con cero | 1, 5, 0 | 5 + 0 = 5 (**no** vuelve a pedir `b`) | _____ | _____ |
@@ -103,8 +102,8 @@ _____
 | Opción decimal | 2.5 (luego 2), 3, 5 | `leerEntero` vuelve a pedir; 3 - 5 = -2 | _____ | _____ |
 | Opción con texto | `suma` (luego 1), 8, 5 | `leerEntero` vuelve a pedir; 8 + 5 = 13 | _____ | _____ |
 | Número con texto | 1, `abc` (luego 8), 5 | `leerDecimal` vuelve a pedir; 8 + 5 = 13 | _____ | _____ |
-| Caso propio 1 | _____ | _____ | _____ | _____ |
-| Caso propio 2 | _____ | _____ | _____ | _____ |
+| Caso propio 1 | __suma___ | 1__+7,+8___ | __16___ | _____si |
+| Caso propio 2 | ___resta negativa__ | _2 ____ | _8-7=1____ | si_____ |
 
 ## 11. Bitácora de mejoras (Fase 4)
 
@@ -114,7 +113,7 @@ _____
 | 2 | _____ | _____ | _____ |
 
 **¿Encontré algo que la receta no contemplaba? ¿Qué?**
-_____
+batalle 
 
 **Reto elegido (opcional):** _____
 
@@ -127,22 +126,22 @@ _____
 ## 13. Reflexión final
 
 **¿Qué aprendí con esta práctica?**
-_____
+como se pueden hacer diferentes operaciones tanto resta , suma, multiplicacion y divison
 
 **Ahora que terminé, ¿qué cambiaría de mi proceso?**
-_____
+nada, siento que es la mejor manera de hacerlo
 
 **¿Qué fue lo más difícil y cómo lo resolví?**
-_____
+aprender a como dividir entre suma y los demas
 
 **¿Qué pregunta me quedó sin responder?**
-_____
+ninguna , todo bien
 
 **¿Fue más fácil programar a partir de una receta ajena que de la mía? ¿Por qué?**
-_____
+sii, por que ya me guiaba de ahi
 
 **Si yo hubiera diseñado la receta, ¿qué le cambiaría?**
-_____
+creo que nada , no sabria de otra manera
 
 ## 14. Lista de verificación antes de entregar (Fase 5)
 
